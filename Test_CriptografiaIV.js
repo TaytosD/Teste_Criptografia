@@ -18,7 +18,7 @@ function decrypt(name){
 
 const name = 'Davi Samuel Costa';
 const curso = 'Análise e Desenvolvimento de Sistemas';
-const meta = 'Receber R$ 15K'
+const meta = 'Receber R$ 15K';
 const criptografado = crypt(name);
 const cursocript = crypt(curso);
 const metacript = crypt(meta);
