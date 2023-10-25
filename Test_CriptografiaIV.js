@@ -11,7 +11,7 @@ function crypt(name){
 
 function decrypt(name){
     const parts = name.split(':')
-    const decipher = crypto.createDecipheriv(alg, senha, new Buffer(parts[0], 'hex'));
+    const decipher = crypto.createDecipheriv(alg, senha, new Buffer.from(parts[0], 'hex'));
     const plain = decipher.update(parts[1], 'hex', 'utf-8') + decipher.final('utf-8');
     return plain;
 }
